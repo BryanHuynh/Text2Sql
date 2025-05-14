@@ -8,6 +8,10 @@ input format is in the form of:
 
 - Target: `SELECT billing_country, AVG(total) FROM invoices GROUP BY billing_country ORDER BY AVG(total) DESC LIMIT 10;`
 
+![Preview](https://raw.githubusercontent.com/BryanHuynh/Text2Sql/refs/heads/main/Server/loss_plot_2025-05-10_20-36-04.png)
+
 In the future I would like to implement a better way to tokenize the input to fit within 1024 token length. With incorperating primary and foreign keys. In addition, the penalitization of generating sql queries that cannot be interpreted. This can be done why running them through the associated .sqlite files provided.
 
 ### Deployed on https://text2-sql-81ui-daoglrmol-bryanhuynhs-projects.vercel.app/
+![Preview](https://raw.githubusercontent.com/BryanHuynh/Text2Sql/refs/heads/main/textToSqlWeb/sample_image.png)
+
